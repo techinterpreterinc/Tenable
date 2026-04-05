@@ -1,33 +1,27 @@
-# Tenable
-Tenable scripts
-# <p align="center"> █▀▀ █▀▀ █▀▀ █░█ █▀▀█ █▀▀ █▀▀ █▀▀ █░█ <br> ░█░ █▀▀ █░░ █▀█ █░░█ █▀▀ █▀▀ █░░ █▀▄ <br> ░▀░ ▀▀▀ ▀▀▀ ▀░▀ █▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀░▀ </p>
+# <p align="center"> ▀█▀ █▀▀ █▀▀ █░█ █▄░█ █▀█ █░░ █▀█ █▀▀ █▄█ <br> ░█░ █▀▀ █░░ █▀█ █░▀█ █▄█ █▄▄ █▄█ █▄█ ░█░ <br> ░▀░ ▀▀▀ ▀▀▀ ▀░▀ ▀░░▀ ▀░▀ ▀▀▀ ▀░▀ ▀▀▀ ░▀░ <br> <b>INTERPRETERS, INC.</b> </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-PowerShell-blue?style=for-the-badge&logo=powershell" />
-  <img src="https://img.shields.io/badge/Security-Tenable-red?style=for-the-badge&logo=tenable" />
+  <img src="https://img.shields.io/badge/Enterprise-Security-red?style=for-the-badge&logo=tenable" />
+  <img src="https://img.shields.io/badge/PowerShell-Automation-blue?style=for-the-badge&logo=powershell" />
   <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows" />
 </p>
 
 ---
 
-## 🎙️ The Tech Interpreter | Official Repository
-Welcome to the central hub for all scripts and resources featured on my **YouTube channel**. This repository is designed to bridge the gap between complex security configurations and automated, easy-to-run solutions.
+## 🎙️ Translating Complexity into Automation
+Welcome to the official repository for **Technology Interpreters, Inc.** This space serves as a technical bridge for our YouTube community, providing the raw code, installation scripts, and security configurations discussed in our content.
 
-### 🎯 What's in here?
-This repo contains the logic and automation for deploying, managing, and auditing security tools, specifically focusing on **Tenable (Nessus/Agents)** and general **Windows System Administration**.
+### 🎯 What We Do
+We specialize in making high-level security tools (like **Tenable**) accessible through automation. Whether you are deploying thousands of agents or auditing a local registry, our scripts are designed to be "plug-and-play."
 
-* 📦 **Deployment:** Silent install/uninstall scripts for Tenable Agents.
-* ⚙️ **Configuration:** PowerShell scripts to tune Windows for security.
-* 🛠️ **Utilities:** Helper scripts for API calls and Registry modifications.
+* 🛡️ **Tenable Lifecycle:** Automating the installation, linking, and removal of Nessus Agents.
+* 🛠️ **System Hardening:** PowerShell-driven configurations for enterprise environments.
+* 📦 **Software Distribution:** MSI and GUID-based deployment logic.
 
 ---
 
-## 🚀 Quick Start (Tenable Deployment)
-If you are here from the YouTube video regarding Tenable installations, remember to force TLS 1.2 in your session before running web requests:
+## 🚀 Pro-Tip: Solving Connection Issues
+Many of the scripts in this repo require secure API communication. If you encounter SSL/TLS errors in PowerShell, run this command at the start of your session to force **TLS 1.2**:
 
 ```powershell
-# Required for modern API communication
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-
-# To run a script directly from this repo:
-irb -useb [https://raw.githubusercontent.com/techinterpreterinc/Tenable/main/install_agent.ps1](https://raw.githubusercontent.com/techinterpreterinc/Tenable/main/install_agent.ps1) | iex
